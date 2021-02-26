@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image: url(./images/bg-intro-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:hsl(0, 100%, 74%) ;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 40px 20px 20px 20px;
+    
+}
+.container {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+.container__heading {
+    text-align: center;
+}
+
+.container__freetrial--bgcolor {
+    background-color:hsl(248, 32%, 49%);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -5px hsl(0, 0%, 45%);
+    margin-bottom: 20px;
+}
+.form {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+.form__control {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form__input {
+    width: 100%;
+    border:1px solid hsl(246, 25%, 77%);
+    padding: 15px 10px;
+    font-family: inherit;
+}
+.form__error {
+    color: hsl(0, 100%, 74%);
+    display: none;
+    text-align: end;
+}
+.error {
+    border: 1px solid hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+}
+.form__icon {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none;
+}
+
+.form__button {
+    padding:15px 10px ;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: 1px solid hsl(154, 59%, 51%);
+    border-radius: 5px;
+}
+.form__footer {
+    color: hsl(246, 25%, 77%);
+    font-size: 11px;
+    text-align: center;
+}
+.form__footer span {
+    color:hsl(0, 100%, 74%); 
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (min-width:768px) {
+    body {
+    min-height: 100vh;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:hsl(0, 100%, 74%) ;
+    overflow: hidden;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container__heading, .container__body {
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .container__heading {
+        text-align: left;
+    }
+}
