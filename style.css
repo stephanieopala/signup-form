@@ -96,6 +96,7 @@ body {
     background-repeat: no-repeat;
     background-color:hsl(0, 100%, 74%) ;
     overflow: hidden;
+    margin: 40px 40px 40px 40px;
     }
     .container {
         display: grid;
